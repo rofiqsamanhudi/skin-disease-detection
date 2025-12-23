@@ -1,5 +1,6 @@
 # Web App
 streamlit
+gdown
 
 # Core Deep Learning
 torch
@@ -22,3 +23,4 @@ opencv-python
 
 # Machine Learning Utilities
 scikit-learn
+
