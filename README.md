@@ -203,11 +203,12 @@ Aplikasi menyediakan tiga model deep learning dengan karakteristik dan performa 
 | ConvNeXt-Base | Model modern ConvNeXt dengan custom classifier head dan full fine-tuning               |
 ---
 ### Model Leaderboard (Test Performance)
-| Model          | Test Accuracy | Training Information                                    |
-| -------------- | ------------- | ------------------------------------------------------- |
-| **ResNet-101** | **79.17%**    | Total epochs trained: 45<br>Final Learning Rate: 1e-06  |
-| ConvNeXt Base  | 77.43%        | Total epochs: 30<br>Final Learning Rate: 1e-04          |
-| CNN Scratch    | 49.42%        | Total epochs trained: 200<br>Final Learning Rate: 6e-05 |
+| Model          | Test Accuracy | Training Information                                    | Analysis                                                                                                                                                                                                                                                                    |
+| -------------- | ------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ResNet-101** | **79.17%**    | Total epochs trained: 45<br>Final Learning Rate: 1e-06  | Model menunjukkan performa terbaik karena memanfaatkan **transfer learning** dan arsitektur residual yang efektif dalam menangkap fitur kompleks pada citra penyakit kulit. Proses fine-tuning dengan learning rate yang sangat kecil menghasilkan konvergensi yang stabil. |
+| ConvNeXt Base  | 77.43%        | Total epochs: 30<br>Final Learning Rate: 1e-04          | Memberikan performa yang kompetitif dengan waktu pelatihan lebih singkat, namun akurasi sedikit lebih rendah. Hal ini kemungkinan disebabkan oleh **proses fine-tuning yang belum optimal** atau learning rate akhir yang relatif masih besar.                              |
+| CNN Scratch    | 49.42%        | Total epochs trained: 200<br>Final Learning Rate: 6e-05 | Performa paling rendah karena model dilatih **dari awal tanpa bobot pretrained**, sehingga kurang mampu mempelajari representasi fitur yang kompleks meskipun jumlah epoch pelatihan jauh lebih banyak.                                                                     |
+
 ---
 **Disclaimer:**  
 Aplikasi ini dikembangkan hanya untuk tujuan edukasi dan demonstrasi.
