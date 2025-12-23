@@ -1,6 +1,7 @@
 # Skin Disease Detection System
 Deep Learning-Based Multi-Class Skin Disease Classification Web Application
 
+Live app: https://skin-disease-detection-sdszshzhy4kvvgmrcxynnq.streamlit.app/
 ## Table of Contents
 - [Overview](#overview)
 - [Instalation](#Instalasi)
