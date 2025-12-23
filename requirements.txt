@@ -1,0 +1,24 @@
+# Web App
+streamlit
+
+# Core Deep Learning
+torch
+torchvision
+timm
+
+# Numerical & Data Processing
+numpy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+plotly
+pillow
+tqdm
+
+# Image Processing
+opencv-python
+
+# Machine Learning Utilities
+scikit-learn
