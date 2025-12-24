@@ -336,11 +336,6 @@ Proyek ini dilengkapi dengan **aplikasi web interaktif berbasis Streamlit** yang
 - Confidence score untuk setiap prediksi
 - Visualisasi hasil klasifikasi
 
-**b. Multi-Model Prediction**
-- Prediksi menggunakan beberapa model sekaligus
-- Perbandingan hasil antar model (CNN Scratch, ResNet-101, ConvNeXt)
-- Analisis perbedaan prediksi
-
 ---
 
 #### 3. 📊 Deep Learning Analytics
@@ -348,21 +343,6 @@ Proyek ini dilengkapi dengan **aplikasi web interaktif berbasis Streamlit** yang
 - **Accuracy Comparison:** Visualisasi perbandingan akurasi model
 - **Training History Visualization:** Kurva training & validation
 - **Confusion Matrix:** Analisis kesalahan klasifikasi (per model)
-
----
-
-#### 4. ⚔️ Model Comparison Arena
-- **Side-by-side prediction:** Satu gambar diuji pada semua model
-- **Instant results:** Prediksi real-time
-- **Comparative visualization:** Perbandingan confidence antar model
-- **Insight analysis:** Model mana yang paling konsisten
-
----
-
-#### 5. ⚙️ System Information
-- **Model Information:** Arsitektur dan ukuran masing-masing model
-- **Dataset Information:** Dataset Kaggle Skin Disease (22 classes)
-- **About Project:** Deskripsi proyek dan tujuan penelitian
 
 ---
 
@@ -386,9 +366,6 @@ cd skin-disease-detection
 2.  **Install Dependencies**
     ```bash
     pip install -r requirements.txt
-    
-    # Verifikasi instalasi
-    python -c "import streamlit, tensorflow; print('✅ Dependencies installed successfully')"
 
     ```
 
@@ -396,7 +373,7 @@ cd skin-disease-detection
     
     Pastikan model files tersedia di folder `model/`:
     ```
-    models/
+    model/
     ├── cnn_skin_disease.pkl
     ├── convnext_base_skin_disease.pkl
     └── resnet101_skin_disease.pkl
