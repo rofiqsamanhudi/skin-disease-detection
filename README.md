@@ -128,9 +128,7 @@ Untuk mengatasi permasalahan tersebut, diterapkan beberapa strategi selama prose
 </div>
 
 **Strategi Penanganan Ketidakseimbangan Data:**
-- ✅ **Class Weighting** dengan bobot kelas yang dihitung berdasarkan proporsi terbalik dari jumlah sampel tiap kelas  
-- ✅ **Stratified Data Split** untuk menjaga distribusi kelas tetap konsisten pada data training, validation, dan testing  
-- ✅ **Balanced Batch Sampling** selama proses training agar setiap batch merepresentasikan berbagai kelas penyakit kulit  
+- ✅ **lass-weighted loss**, dengan bobot kelas dihitung berdasarkan proporsi terbalik jumlah sampel pada setiap kelas
 
 Pendekatan ini bertujuan untuk meningkatkan **generalization ability** model serta memastikan performa yang lebih stabil dan adil pada seluruh kelas, termasuk kelas dengan jumlah data terbatas.
 
@@ -149,7 +147,7 @@ Tahapan preprocessing dilakukan untuk memastikan seluruh citra memiliki format y
   Augmentasi diterapkan pada data training untuk meningkatkan variasi data dan mengurangi risiko *overfitting*. Teknik augmentasi yang digunakan meliputi:
   - Random Rotation  
   - Width & Height Shift  
-  - Zoom  
+  - Blur, sharpness, crop, contrast, etc  
   - Horizontal Flip  
 
 - **Normalisasi Data:**  
